@@ -78,7 +78,7 @@ class Free:
       b=Free.randome()
       c=Free.randome()
       WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, '//input[@id="input_serial_1"]'))).send_keys(skins[self.skin][1])
-      WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, '//input[@id="input_serial_2"]'))).send_keys(b[0:2])
+      WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, '//input[@id="input_serial_2"]'))).send_keys(b[0:3])
       WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, '//input[@id="input_serial_3"]'))).send_keys(c)
       WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, '//button[@class="confirm-btn"]'))).click()
       time.sleep(1.4)
